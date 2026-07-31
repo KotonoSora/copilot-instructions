@@ -43,6 +43,7 @@ This project provides a set of best practices, coding rules, and prompt instruct
 - 🤡 Microcks metadata instructions for API Mock and contract testing:
    - [GroovyScript metadata rules](instructions/microcks-metadata-groovyscript.instructions.md)
    - [JSON body metadata rules](instructions/microcks-metadata-jsonbody.instructions.md)
+- ⚙️ **SKRAFT plugin**: deterministic agentic SDLC pipeline (DISCOVER → DISCUSS → DESIGN → DISTILL → DELIVER) with specialized agents, adversarial reviewers, discipline skills (Outside-In TDD, Clean Architecture) and mechanical guardrails, compatible with Claude Code, GitHub Copilot and Cursor ([see repository](https://github.com/SebastienDegodez/skraft-plugin) · [documentation](https://sebastiendegodez.github.io/skraft-plugin/fr/))
 
 > [![Watch the video](https://img.youtube.com/vi/QIoorNhYm3s/maxresdefault.jpg)](https://youtu.be/QIoorNhYm3s)
 
@@ -83,6 +84,31 @@ Comprehensive plugin for C# developers with DDD, Clean Architecture, CQRS, and t
 - **Installation**: See plugin README for details
 
 See [plugins/](plugins/) for more available plugins.
+
+### SKRAFT
+
+Deterministic agentic SDLC pipeline that turns a coding assistant into a disciplined software production line. Orchestrates 5 lifecycle phases (DISCOVER → DISCUSS → DESIGN → DISTILL → DELIVER), each driven by a specialized agent and an adversarial reviewer, locked by mechanical guardrails (G1–G8).
+
+- **Repository**: [SebastienDegodez/skraft-plugin](https://github.com/SebastienDegodez/skraft-plugin)
+- **Documentation**: [sebastiendegodez.github.io/skraft-plugin/fr/](https://sebastiendegodez.github.io/skraft-plugin/fr/)
+- **Supported harnesses**: Claude Code, GitHub Copilot, Cursor
+- **Key features**:
+  - 🔁 5-phase SDLC pipeline orchestrated by `skraft-orchestrator`
+  - 🤖 Specialized phase agents: `backlog-discoverer`, `backlog-planner`, `solution-architect`, `acceptance-designer`, `software-engineer` — each with a dedicated adversarial reviewer
+  - 🛡️ Mechanical guardrails G1–G8 (fail-closed hooks): dispatch ordering, forced skill loading, artifact/verdict/commit verification
+  - 📚 Discipline skills: Outside-In TDD, Clean Architecture, BDD/Gherkin, mutation testing, contract testing, ADR
+  - 💸 Token economy with model routing by cost class
+
+**Installation (Claude Code):**
+```bash
+/plugin marketplace add SebastienDegodez/skraft-plugin
+/plugin install skraft
+```
+
+**Quick start:**
+```
+/skraft
+```
 
 ## 📦 What is a collection?
 
